@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caa06c6371307e847aca1c15b64861d5, type: 3}
+  m_Name: plusInfo
+  m_EditorClassIdentifier: 
+  english: Make sure to get close to you Artifact to heal it once you harvested some
+    fruits
+  vietnamese: "\u0110\u1EEBng \u0111\u1EC3 c\u1ED5 v\u1EADt ch\u1EBFt \u0111\xF3i,
+    h\xE1i tr\xE1i xong cho n\xF3 \u0103n li\u1EC1n!"
