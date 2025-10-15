@@ -2005,7 +2005,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 3
   m_WholeNumbers: 1
-  m_Value: 0
+  m_Value: 2
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3072,7 +3072,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -64, y: -8.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &453774740
 MonoBehaviour:
@@ -3087,7 +3087,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8117647, g: 0.40784314, b: 0.3529412, a: 1}
+  m_Color: {r: 0.78113204, g: 0.24786857, b: 0.17538616, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3124,19 +3124,19 @@ PrefabInstance:
         type: 3}
       propertyPath: 'sprites.Array.data[0]'
       value: 
-      objectReference: {fileID: 21300000, guid: a82e7952796a6674fbd267524350d759,
+      objectReference: {fileID: 21300000, guid: 8493037421bf9784e8a0b8d1e1ea2110,
         type: 3}
     - target: {fileID: 908704112443840849, guid: 6218a63343ebf3644bcb7ab390ac148b,
         type: 3}
       propertyPath: 'sprites.Array.data[1]'
       value: 
-      objectReference: {fileID: 21300000, guid: a82e7952796a6674fbd267524350d759,
+      objectReference: {fileID: 21300000, guid: 5b3c5db921a055a44bcc0283a718b0f7,
         type: 3}
     - target: {fileID: 908704112443840849, guid: 6218a63343ebf3644bcb7ab390ac148b,
         type: 3}
       propertyPath: 'sprites.Array.data[2]'
       value: 
-      objectReference: {fileID: 21300000, guid: a82e7952796a6674fbd267524350d759,
+      objectReference: {fileID: 21300000, guid: bccf5691ef79a944598ec9ad5f0c60e1,
         type: 3}
     - target: {fileID: 908704112443840860, guid: 6218a63343ebf3644bcb7ab390ac148b,
         type: 3}
@@ -3222,7 +3222,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a82e7952796a6674fbd267524350d759,
+      objectReference: {fileID: 21300000, guid: bccf5691ef79a944598ec9ad5f0c60e1,
         type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11685,7 +11685,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: fcedd80c8499f96418b267c550ab46df, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -24165,7 +24164,7 @@ RectTransform:
   m_GameObject: {fileID: 1399185069}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 6, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 242441455}
@@ -24188,14 +24187,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.38431373, g: 0.34117648, b: 0.3764706, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7a9d97615136b0b48be01a8e4f20683f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ada2ef033fda23e4bbc6187706aa725c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
