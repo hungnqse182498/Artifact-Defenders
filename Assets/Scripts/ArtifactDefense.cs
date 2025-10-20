@@ -120,7 +120,7 @@ public class ArtifactDefense : MonoBehaviour
         {
             lr.enabled = true;
             // 🔥 THÊM Z VÀO VỊ TRÍ GỐC LASER
-            Vector3 startPos = transform.position;
+            Vector3 startPos = transform.position + Vector3.up * 1.5f;
             startPos.z = -1f; // Đẩy Laser ra phía trước (Z=-1 hoặc Z=-2)
 
             Vector3 targetPos = target.position;
