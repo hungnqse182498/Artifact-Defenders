@@ -7,7 +7,7 @@ using UnityEngine;
 /// </summary>
 public static class Localization
 {
-    public static LocalizableString.Language currentLanguage = LocalizableString.Language.Spanish; //Spanish by default
+    public static LocalizableString.Language currentLanguage = LocalizableString.Language.Vietnamese; //Vietnamese by default
     /// <summary>
     /// Changes the current language to the given value
     /// </summary>

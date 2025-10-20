@@ -15,7 +15,10 @@ public class PlayerMovement : MonoBehaviour
 
     float timer;
     bool harvesting;
-    
+
+    bool attacking;
+    float attackTimer;
+
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
@@ -24,10 +27,11 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        if(Time.time > timer)
-        {
-            harvesting = false;
-        }
+        if (harvesting && Time.time > timer)
+        harvesting = false;
+
+    if (attacking && Time.time > attackTimer)
+        attacking = false;
         FlipSprite();
     }
 
@@ -45,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (harvesting)
+        if (harvesting || attacking)
         {
             rigidbody.linearVelocity = Vector2.zero;
         }
@@ -70,4 +74,21 @@ public class PlayerMovement : MonoBehaviour
     {
         return harvesting;
     }
+
+    public bool IsAttacking()
+    {
+        return attacking;
+    }
+
+    public Vector2 GetVelocity()
+    {
+        return rigidbody.linearVelocity;
+    }
+
+    public void StopMovementForAttack(float time)
+    {
+        attacking = true;
+        attackTimer = Time.time + time;
+    }
+
 }

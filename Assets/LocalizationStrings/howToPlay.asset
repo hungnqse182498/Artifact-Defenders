@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caa06c6371307e847aca1c15b64861d5, type: 3}
   m_Name: howToPlay
   m_EditorClassIdentifier: 
-  spanish: Como jugar
   english: How to play
+  vietnamese: "C\xE1ch ch\u01A1i"

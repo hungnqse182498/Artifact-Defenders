@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caa06c6371307e847aca1c15b64861d5, type: 3}
   m_Name: harvesting
   m_EditorClassIdentifier: 
-  spanish: Cosechando...
   english: Harvesting...
+  vietnamese: "\u0110ang thu ho\u1EA1ch..."

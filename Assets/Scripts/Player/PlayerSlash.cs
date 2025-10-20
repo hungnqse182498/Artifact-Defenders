@@ -16,9 +16,15 @@ public class PlayerSlash : MonoBehaviour
     new Collider2D collider2D;
     public LayerMask enemyMask;
     AudioSource audioSource;
+
+    PlayerMovement playerMovement;
+    PlayerSpriteAnim playerAnim;
+
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        playerMovement = GetComponentInParent<PlayerMovement>();
+        playerAnim = GetComponentInParent<PlayerSpriteAnim>();
     }
     void Update()
     {
@@ -32,13 +38,20 @@ public class PlayerSlash : MonoBehaviour
     void Slash()
     {
         Instantiate(slashPrefab, transform.position, transform.rotation);
+        if (playerAnim != null) playerAnim.PlayAttack(0.3f);
+        if (playerMovement != null) playerMovement.StopMovementForAttack(0.3f);
         Collider2D[] hits = Physics2D.OverlapBoxAll(transform.position, new Vector2(2,1.5f), pivot.rotation.z, enemyMask);
         if(hits.Length != 0)
         {
-            foreach(Collider2D hit in hits)
+            foreach (Collider2D hit in hits)
             {
-                hit.GetComponent<EnemyHealth>().DamageEnemy(damage);
+                EnemyAI enemy = hit.GetComponent<EnemyAI>();
+                if (enemy != null)
+                {
+                    enemy.TakeDamage(damage); // hoặc damage nếu bạn muốn tính theo Player
+                }
             }
+
         }
     }
 }

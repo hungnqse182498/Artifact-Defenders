@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caa06c6371307e847aca1c15b64861d5, type: 3}
   m_Name: plusInfo
   m_EditorClassIdentifier: 
-  spanish: 'Asegurate de acercarte a tu Artifact para curarlo, una vez hayas recolectado
-    frutas '
   english: Make sure to get close to you Artifact to heal it once you harvested some
     fruits
+  vietnamese: "H\xE3y \u0111\u1EBFn g\u1EA7n c\u1ED5 v\u1EADt \u0111\u1EC3 h\u1ED3i
+    m\xE1u cho n\xF3 sau khi b\u1EA1n \u0111\xE3 thu ho\u1EA1ch \u0111\u01B0\u1EE3c
+    m\u1ED9t \xEDt tr\xE1i c\xE2y."

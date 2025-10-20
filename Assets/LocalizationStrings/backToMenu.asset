@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caa06c6371307e847aca1c15b64861d5, type: 3}
   m_Name: backToMenu
   m_EditorClassIdentifier: 
-  spanish: Volver al Menu
   english: Back to Menu
+  vietnamese: "Quay l\u1EA1i Menu"

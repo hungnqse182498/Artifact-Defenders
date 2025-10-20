@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caa06c6371307e847aca1c15b64861d5, type: 3}
   m_Name: backpack
   m_EditorClassIdentifier: 
-  spanish: Mochila
   english: Backpack
+  vietnamese: "T\xFAi \u0111\u1ED3"

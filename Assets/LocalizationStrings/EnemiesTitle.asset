@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caa06c6371307e847aca1c15b64861d5, type: 3}
   m_Name: EnemiesTitle
   m_EditorClassIdentifier: 
-  spanish: 'Hay 2 tipos de enemigos:'
   english: 'There are 2 types of enemies:'
+  vietnamese: "C\xF3 2 lo\u1EA1i k\u1EBB \u0111\u1ECBch:"

@@ -19,6 +19,6 @@ public class BackpackUI : MonoBehaviour
 
     void Update()
     {
-        text.text = localizableString.GetString(Localization.currentLanguage) + ":\n" + backpack.current + " / " + backpack.max;
+        text.text = localizableString.GetString(Localization.currentLanguage) + ": " + backpack.current + " / " + backpack.max;
     }
 }
