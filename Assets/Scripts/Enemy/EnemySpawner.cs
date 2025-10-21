@@ -7,47 +7,74 @@ using UnityEngine;
 /// </summary>
 public class EnemySpawner : MonoBehaviour
 {
+    // === CÁC BIẾN PREFAB ===
     [SerializeField] Transform wolfPrefab;
     [SerializeField] Transform wolfEaterPrefab;
+    [SerializeField] Transform enemy00Prefab;
+    [SerializeField] Transform enemy01Prefab;
+
     [SerializeField] Transform[] spawnPoints;
 
-    [SerializeField] int eaterChance = 3;     //Chance out of 10 wolves to spawn an eater wolf
-    [SerializeField] float spawnTime;         //Initial spawn delay per wolf
-    [SerializeField] float spawnReductionPer; //Reduction in spawn delay per each wolf spawn
-    [SerializeField] float spawnFloor;        //Minimum spawn delay per wolf
+    [SerializeField] int eaterChance = 3;       // Tỷ lệ sinh của nhóm kẻ thù khó
+    [SerializeField] float spawnTime;
+    [SerializeField] float spawnReductionPer;
+    [SerializeField] float spawnFloor;
+
+    // Danh sách kẻ thù khó (Khởi tạo trước để tái sử dụng)
+    private Transform[] hardEnemies;
+    // Danh sách kẻ thù thường (Khởi tạo trước để tái sử dụng)
+    private Transform[] commonEnemies;
 
     float currentSpawnTime;
     float timer;
 
     void Start()
     {
+        // Khởi tạo các danh sách một lần duy nhất
+        // Nhóm Khó: wolfEaterPrefab và enemy00Prefab
+        hardEnemies = new Transform[] { wolfEaterPrefab, enemy00Prefab };
+
+        // Nhóm Thường: wolfPrefab và enemy01Prefab
+        commonEnemies = new Transform[] { wolfPrefab, enemy01Prefab };
+
         currentSpawnTime = spawnTime;
         timer = Time.time;
     }
 
     void Update()
     {
-        if(Time.time > timer)
+        if (Time.time > timer)
         {
             Spawn();
+            // Cơ chế giảm thời gian sinh giữ nguyên
             currentSpawnTime -= spawnReductionPer;
-            if(currentSpawnTime <= spawnFloor)
+            if (currentSpawnTime <= spawnFloor)
             {
                 currentSpawnTime = spawnFloor;
             }
             timer = Time.time + currentSpawnTime;
         }
     }
+
     void Spawn()
     {
-        //Calculate eater wolf chance
-        if(Random.Range(0,11) > eaterChance)
+        // Chọn ngẫu nhiên một vị trí sinh
+        Vector3 spawnPosition = spawnPoints[Random.Range(0, spawnPoints.Length)].position;
+
+        // Tính toán tỷ lệ sinh (Random từ 0 đến 10)
+        if (Random.Range(0, 11) <= eaterChance)
         {
-            Instantiate(wolfPrefab, spawnPoints[Random.Range(0, spawnPoints.Length)].position, Quaternion.identity);
+            // === VAI TRÒ KHÓ (Chia sẻ tỷ lệ) ===
+            // Chọn ngẫu nhiên giữa wolfEaterPrefab và enemy00Prefab
+            Transform enemyToSpawn = hardEnemies[Random.Range(0, hardEnemies.Length)];
+            Instantiate(enemyToSpawn, spawnPosition, Quaternion.identity);
         }
         else
         {
-            Instantiate(wolfEaterPrefab, spawnPoints[Random.Range(0, spawnPoints.Length)].position, Quaternion.identity);
+            // === VAI TRÒ THƯỜNG (Chia sẻ tỷ lệ) ===
+            // Chọn ngẫu nhiên giữa wolfPrefab và enemy01Prefab
+            Transform enemyToSpawn = commonEnemies[Random.Range(0, commonEnemies.Length)];
+            Instantiate(enemyToSpawn, spawnPosition, Quaternion.identity);
         }
     }
 }

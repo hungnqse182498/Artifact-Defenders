@@ -328,7 +328,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5cab149a482bec4d98b467de0970c25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
   maxHealth: 100
   bleed: 2
 --- !u!58 &30125870
@@ -2045,6 +2044,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   artifact: {fileID: 30125869}
+  healthText: {fileID: 0}
 --- !u!1001 &277369199
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4900,6 +4900,10 @@ MonoBehaviour:
   wolfPrefab: {fileID: 6060242505385302422, guid: b6e19e068e958204283aad9b6e75008a,
     type: 3}
   wolfEaterPrefab: {fileID: 8011127346797358265, guid: d97a5a300028d1b43b7206f677adf17d,
+    type: 3}
+  enemy00Prefab: {fileID: 6060242505385302422, guid: 5547e0ead9fdf8d4290ce138176c7080,
+    type: 3}
+  enemy01Prefab: {fileID: 6060242505385302422, guid: 94708bcd8bd22dd4383ed0c714c749d5,
     type: 3}
   spawnPoints:
   - {fileID: 1624900929}
