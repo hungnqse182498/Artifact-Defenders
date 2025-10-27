@@ -5068,8 +5068,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEater: 0
   moveSpeed: 1
-  maxHealth: 50
-  attackDamage: 2
+  maxHealth: 40
+  attackDamage: 1
   attackCooldown: 2
   eatTime: 0
   bushesMask:
@@ -5080,6 +5080,8 @@ MonoBehaviour:
   isAttacking: 0
   isHurt: 0
   isDead: 0
+  UpgradeItem: {fileID: 3586346103520735342, guid: 5bafdac972fab654ca4f0f3336834ddd,
+    type: 3}
 --- !u!114 &6060242505385302423
 MonoBehaviour:
   m_ObjectHideFlags: 0
