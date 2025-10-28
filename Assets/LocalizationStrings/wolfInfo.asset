@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: wolfInfo
   m_EditorClassIdentifier: 
   english: These will attack you Artifact directly
-  vietnamese: "Gi\u1EEF Artifact c\u1EA9n th\u1EADn, b\u1ECDn n\xE0y s\u1EBD t\u1EA5n
-    c\xF4ng th\u1EB3ng v\xE0o c\u1ED5 v\u1EADt c\u1EE7a b\u1EA1n"
+  vietnamese: "Ch\xFAng s\u1EBD t\u1EA5n c\xF4ng tr\u1EF1c ti\u1EBFp v\xE0o c\u1ED5
+    v\u1EADt c\u1EE7a b\u1EA1n."

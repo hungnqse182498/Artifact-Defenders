@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caa06c6371307e847aca1c15b64861d5, type: 3}
   m_Name: win
   m_EditorClassIdentifier: 
-  english: You Win!
-  vietnamese: "Bro \u0111\xE3 kh\xF4ng thua !"
+  english: You Win
+  vietnamese: "B\u1EA1n \u0111\xE3 th\u1EAFng"
