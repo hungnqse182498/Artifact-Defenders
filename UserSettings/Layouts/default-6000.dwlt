@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 772.8
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Inspector
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 93
+  controlID: 91
   draggingID: 0
 --- !u!114 &3
 MonoBehaviour:
@@ -69,8 +69,8 @@ MonoBehaviour:
     y: 0
     width: 526.4
     height: 716.8
-  m_MinSize: {x: 276, y: 76}
-  m_MaxSize: {x: 4001, y: 4026}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -95,8 +95,8 @@ MonoBehaviour:
     y: 0
     width: 234.4
     height: 482.4
-  m_MinSize: {x: 201, y: 226}
-  m_MaxSize: {x: 4001, y: 4026}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -339,28 +339,28 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Scenes
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\hungpham\Downloads\Artifact-Defenders-quochung
+  m_LastProjectPath: C:\Users\hungpham\Documents\GitHub\Artifact-Defenders
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 127.600006}
-    m_SelectedIDs: 1a7b0000
-    m_LastClickedID: 31514
-    m_ExpandedIDs: 00000000187b00001a7b000000ca9a3b
+    scrollPos: {x: 0, y: 143.6}
+    m_SelectedIDs: ca7b0000
+    m_LastClickedID: 31690
+    m_ExpandedIDs: 00000000607b0000d27b00002a87000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Sprites
-      m_OriginalName: Sprites
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 31624
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_TrimLeadingAndTrailingWhitespace: 0
       m_ClientGUIView: {fileID: 5}
@@ -375,7 +375,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000187b00001a7b0000
+    m_ExpandedIDs: 00000000607b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -477,7 +477,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 594
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -523,9 +523,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 9a8a0100
-      m_LastClickedID: 101018
-      m_ExpandedIDs: 12fcfcff4c24fdff4825fdffe030fdffaa44fdff6045fdfff445fdff9e46fdffa84dfdff3e4efdffa461fdff2262fdffb286fdffc8b7fdff3ec6fdff16cdfdff18cdfdff88e0fdff06e1fdff10e3fdff12e3fdfff4e8fdff48eafdff4eebfdff8a1efeffb41efeff561ffeffce2cfeffe22cfefff62cfefff82cfeff3436feff4a36feff4c36feff8a37feff9842feff2c43feff0a45feffdc46fefff849feff8e4afeff524efeff8050feff2c52feff9652feff0255feff8c58fefff658feff6059feffd06cfeff986dfeff026efeff6881feffd281feff3c82feffa895feffac99feff00fbffff5a7a0000727a0000847a0000a27a0000be7a00000e0001003c000100fe0901000e0a0100600f01008e0f01009e160100aa160100be16010000180100101801007e19010092190100741a0100841a0100881c0100901c01009c1c0100621d0100721d010074200100a22001008822010096220100a0220100202401003024010098240100a6240100b02401001e2d0100282d01001634010020340100d4450100e6450100324601003c46010092460100a0460100b2460100fc4701002a480100b04d0100de4d010040580100867101009472010090780100a47801007c7c01006e8c0100
+      m_SelectedIDs: 1cdd0000
+      m_LastClickedID: 56604
+      m_ExpandedIDs: fa32ffffee3bffffa83cffff4450ffff2264ffff2ad4ffff5ad7ffff70d7ffff14f9ffff00fbffff3a7c0000aa7c00007e7e00008c8700009c87000034880000a48800007a890000788a000076d500003cd700001cdd0000e2de000010df0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1046,9 +1046,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 175.96661, y: 415.77927, z: -5.892191}
+    m_Target: {x: 1068.6766, y: 523.8919, z: -0.6329707}
     speed: 2
-    m_Value: {x: 175.96661, y: 415.77927, z: -5.892191}
+    m_Value: {x: 1068.6766, y: 523.8919, z: -0.6329707}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1098,9 +1098,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 599.2186
+    m_Target: 144.69188
     speed: 2
-    m_Value: 599.2186
+    m_Value: 144.69188
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1118,8 +1118,8 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.032286946, y: -0.0814672, z: -0.0026412331, w: 0.9961578}
-  m_LastSceneViewOrtho: 1
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewOrtho: 0
   m_Viewpoint:
     m_SceneView: {fileID: 15}
     m_CameraOverscanSettings:
