@@ -15,6 +15,15 @@ public class BoomerangProjectile : MonoBehaviour
     BoomerangSkill owner;
     bool returning;
 
+    // ---- Hoạt ảnh ----
+    [Header("Animation Frames")]
+    [SerializeField] SpriteRenderer spriteRenderer;
+    [SerializeField] Sprite[] spinFrames;
+    [SerializeField] float frameTime = 0.06f;
+
+    int frameIndex;
+    float frameTimer;
+
     // chống trừ máu 60 lần/giây
     readonly Dictionary<Transform, float> lastHitTime = new Dictionary<Transform, float>();
 
@@ -97,6 +106,19 @@ public class BoomerangProjectile : MonoBehaviour
             if (dmg != null)
                 dmg.TakeDamage(damage, rb.position, knock);
         }
+
+        // 4) Chạy hoạt ảnh boomerang (đổi frame)
+        if (spinFrames != null && spinFrames.Length > 0 && spriteRenderer != null)
+        {
+            frameTimer += Time.deltaTime;
+            if (frameTimer >= frameTime)
+            {
+                frameTimer -= frameTime;
+                frameIndex = (frameIndex + 1) % spinFrames.Length;
+                spriteRenderer.sprite = spinFrames[frameIndex];
+            }
+        }
+
     }
 
 #if UNITY_EDITOR

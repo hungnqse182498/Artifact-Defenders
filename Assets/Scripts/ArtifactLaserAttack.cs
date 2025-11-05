@@ -107,44 +107,62 @@ public class ArtifactLaserAttack : MonoBehaviour
 
     void ShootLaser()
     {
-        // 🔥 KHẮC PHỤC: Sử dụng EnemyHealth và gọi hàm DamageEnemy
-        EnemyHealth healthScript = target.GetComponent<EnemyHealth>();
+        if (target == null) return;
 
+        EnemyHealth healthScript = target.GetComponent<EnemyHealth>();
         if (healthScript != null)
         {
-            // GỌI HÀM NHẬN SÁT THƯƠNG TRÊN MỤC TIÊU
-            // Sát thương Laser (float damage) phải được chuyển về int
             healthScript.DamageEnemy(Mathf.CeilToInt(damage));
         }
 
-        // HIỂN THỊ LASER
         if (lr != null)
         {
-            lr.enabled = true;
-            // 🔥 THÊM Z VÀO VỊ TRÍ GỐC LASER
-            Vector3 startPos = transform.position + Vector3.up * 1.5f;
-            startPos.z = -1f; // Đẩy Laser ra phía trước (Z=-1 hoặc Z=-2)
-
-            Vector3 targetPos = target.position;
-            targetPos.z = -1f; // Đẩy điểm cuối ra phía trước
-
-            lr.SetPosition(0, startPos);
-            lr.SetPosition(1, targetPos);
+            StopAllCoroutines(); // tránh bị chồng tia khi bắn nhanh
+            StartCoroutine(LaserCutOffEffect(target));
         }
-
-        // Tắt Laser sau một khoảng thời gian ngắn để tạo hiệu ứng "bắn"
-        StartCoroutine(DisableLaserAfterDelay());
     }
 
-    // Tắt Laser ngay lập tức sau khi bắn
-    IEnumerator DisableLaserAfterDelay()
+    IEnumerator LaserCutOffEffect(Transform target)
     {
-        // Chờ 0.05 giây để tia sáng xuất hiện
-        yield return new WaitForSeconds(0.1f);
-        if (lr != null)
+        lr.enabled = true;
+        lr.positionCount = 2;
+
+        // Vị trí gốc (đầu trụ)
+        Vector3 startPos = transform.position + Vector3.up * 1.5f;
+        startPos.z = -1f;
+
+        // Vị trí mục tiêu
+        Vector3 endPos = target.position;
+        endPos.z = -1f;
+
+        float totalDist = Vector3.Distance(startPos, endPos);
+
+        float headSpeed = 40f; // tốc độ đầu laze bay ra
+        float tailSpeed = 60f; // tốc độ đuôi laze rút theo sau
+        float headProgress = 0f;
+        float tailProgress = 0f;
+
+        // --- Giai đoạn 1: đầu laze bay tới mục tiêu ---
+        while (headProgress < 1f)
         {
-            lr.enabled = false;
+            headProgress += (headSpeed / totalDist) * Time.deltaTime;
+            Vector3 headPos = Vector3.Lerp(startPos, endPos, headProgress);
+            lr.SetPosition(0, startPos);
+            lr.SetPosition(1, headPos);
+            yield return null;
         }
+
+        // --- Giai đoạn 2: đuôi laze rời trụ và chạy theo đầu ---
+        while (tailProgress < 1f)
+        {
+            tailProgress += (tailSpeed / totalDist) * Time.deltaTime;
+            Vector3 tailPos = Vector3.Lerp(startPos, endPos, tailProgress);
+            lr.SetPosition(0, tailPos);  // đuôi di chuyển
+            lr.SetPosition(1, endPos);   // đầu giữ nguyên ở mục tiêu
+            yield return null;
+        }
+
+        lr.enabled = false;
     }
 
     // Vẽ Phạm vi Tấn công trong Editor (Chỉ để debug)

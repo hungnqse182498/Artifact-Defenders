@@ -10,7 +10,6 @@ public class UpgradeUI : MonoBehaviour
 {
     [Header("Localization Strings")]
     public LocalizableString notEnoughStones;
-    public LocalizableString upgrading;
     public LocalizableString upgradeSuccessful;
     public LocalizableString towerMaxLevel;
 
@@ -52,7 +51,6 @@ public class UpgradeUI : MonoBehaviour
 
     // ==== Hàm tiện lợi để gọi trong code khác ====
     public void ShowNotEnoughStones() => ShowMessage(notEnoughStones);
-    public void ShowUpgrading() => ShowMessage(upgrading);
     public void ShowUpgradeSuccessful() => ShowMessage(upgradeSuccessful);
     public void ShowTowerMaxLevel() => ShowMessage(towerMaxLevel);
 }

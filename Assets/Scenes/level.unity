@@ -277,7 +277,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 5461f7f7afcf83847889f557100389a6, type: 3}
+  m_Sprite: {fileID: 1352860047678748581, guid: d734495820c5c5e4ba045d6a464fd4da,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -503,9 +504,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactUpgrade
   animator: {fileID: 30125872}
   playerInv: {fileID: 1529478016}
-  upgradeCosts: 000000000100000002000000
+  upgradeCosts: 000000000000000000000000
   maxHealthByLevel: 0000000064000000c80000002c010000
   upgradeUI: {fileID: 1561513274}
+  upgradeEffectPrefab: {fileID: 638698971132257297, guid: dbffc42e65108d74f9c3d405ea1cab65,
+    type: 3}
 --- !u!120 &30125874
 LineRenderer:
   serializedVersion: 2
@@ -629,7 +632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ArtifactLaserAttack
   attackRange: 5
-  fireRate: 0.5
+  fireRate: 1
   damage: 10
   targetMask:
     serializedVersion: 2
@@ -5587,7 +5590,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 474978284}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
@@ -5613,7 +5616,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: +1
+  m_Text: 
 --- !u!222 &474978287
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8940,6 +8943,8 @@ MonoBehaviour:
   enemy00Prefab: {fileID: 6060242505385302422, guid: 94708bcd8bd22dd4383ed0c714c749d5,
     type: 3}
   enemy01Prefab: {fileID: 6060242505385302422, guid: 5547e0ead9fdf8d4290ce138176c7080,
+    type: 3}
+  BossPrefab: {fileID: 6060242505385302422, guid: 77212cfc87a9c85458caa2a4bd3cb58a,
     type: 3}
   spawnPoints:
   - {fileID: 1624900929}
@@ -31039,7 +31044,7 @@ Transform:
   m_GameObject: {fileID: 1264576488}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.032, y: 0.2, z: 0}
+  m_LocalPosition: {x: 0.05, y: 0.95, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -38492,8 +38497,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 38
-  m_Sprite: {fileID: 3322266479791537964, guid: fe74fa31c5a5d714fac546ff837aa3c8,
-    type: 3}
+  m_Sprite: {fileID: 815424164945274260, guid: 6b5a383e60ce5f240b86019b5f488036, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -38537,24 +38541,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idleSprites:
-  - {fileID: 3322266479791537964, guid: fe74fa31c5a5d714fac546ff837aa3c8, type: 3}
-  - {fileID: -920743883665117794, guid: fe74fa31c5a5d714fac546ff837aa3c8, type: 3}
-  - {fileID: -4790630363681379554, guid: fe74fa31c5a5d714fac546ff837aa3c8, type: 3}
-  - {fileID: 3828617975996676387, guid: fe74fa31c5a5d714fac546ff837aa3c8, type: 3}
+  - {fileID: 815424164945274260, guid: 6b5a383e60ce5f240b86019b5f488036, type: 3}
+  - {fileID: -270785710348516584, guid: 6b5a383e60ce5f240b86019b5f488036, type: 3}
+  - {fileID: 8443794771774750484, guid: 6b5a383e60ce5f240b86019b5f488036, type: 3}
+  - {fileID: 1777182293076053196, guid: 6b5a383e60ce5f240b86019b5f488036, type: 3}
+  - {fileID: 6114163804962241700, guid: 6b5a383e60ce5f240b86019b5f488036, type: 3}
+  - {fileID: -7154528564402915179, guid: 6b5a383e60ce5f240b86019b5f488036, type: 3}
+  - {fileID: -8112586356116296526, guid: 6b5a383e60ce5f240b86019b5f488036, type: 3}
   runSprites:
-  - {fileID: -4148130907891152603, guid: e006a894066e5e64a8e52fcf46d4e4db, type: 3}
-  - {fileID: -3824739264333549918, guid: e006a894066e5e64a8e52fcf46d4e4db, type: 3}
-  - {fileID: -8104160580848625015, guid: e006a894066e5e64a8e52fcf46d4e4db, type: 3}
-  - {fileID: -4477887296366386017, guid: e006a894066e5e64a8e52fcf46d4e4db, type: 3}
-  - {fileID: 1750293083978854349, guid: e006a894066e5e64a8e52fcf46d4e4db, type: 3}
-  - {fileID: 6489373129660451710, guid: e006a894066e5e64a8e52fcf46d4e4db, type: 3}
-  - {fileID: -1165244561205285897, guid: e006a894066e5e64a8e52fcf46d4e4db, type: 3}
-  - {fileID: -8661949156840128632, guid: e006a894066e5e64a8e52fcf46d4e4db, type: 3}
+  - {fileID: -4726913989911992049, guid: dd6a75a6de1edcd458d021250a10df45, type: 3}
+  - {fileID: -1224304467317232117, guid: dd6a75a6de1edcd458d021250a10df45, type: 3}
+  - {fileID: 3159551424834153068, guid: dd6a75a6de1edcd458d021250a10df45, type: 3}
+  - {fileID: -4270742793311013030, guid: dd6a75a6de1edcd458d021250a10df45, type: 3}
+  - {fileID: -4469841436486958459, guid: dd6a75a6de1edcd458d021250a10df45, type: 3}
+  - {fileID: -5792612846293609617, guid: dd6a75a6de1edcd458d021250a10df45, type: 3}
+  - {fileID: -2380123854543253929, guid: dd6a75a6de1edcd458d021250a10df45, type: 3}
+  - {fileID: -337668074351880697, guid: dd6a75a6de1edcd458d021250a10df45, type: 3}
   attackSprites:
-  - {fileID: -8772501877816727533, guid: 979c42be3b4107f479cdc2a4c1e18f2d, type: 3}
-  - {fileID: -7500567144402864826, guid: 979c42be3b4107f479cdc2a4c1e18f2d, type: 3}
-  - {fileID: 1088805750045913721, guid: 979c42be3b4107f479cdc2a4c1e18f2d, type: 3}
-  - {fileID: 4276176619098277825, guid: 979c42be3b4107f479cdc2a4c1e18f2d, type: 3}
+  - {fileID: 5657851921139860834, guid: 0bd693a7e4f9f4041bee46b271a9aafa, type: 3}
+  - {fileID: 8167334401786168451, guid: 0bd693a7e4f9f4041bee46b271a9aafa, type: 3}
+  - {fileID: -2486501126090535953, guid: 0bd693a7e4f9f4041bee46b271a9aafa, type: 3}
+  - {fileID: -8047713305943468122, guid: 0bd693a7e4f9f4041bee46b271a9aafa, type: 3}
+  - {fileID: -2616100659346094035, guid: 0bd693a7e4f9f4041bee46b271a9aafa, type: 3}
+  - {fileID: -573243720678724564, guid: 0bd693a7e4f9f4041bee46b271a9aafa, type: 3}
   frameTime: 0.1
 --- !u!114 &1529478009
 MonoBehaviour:
@@ -38607,7 +38616,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.68, y: 1.25}
+    oldSize: {x: 0.875, y: 1.21875}
     newSize: {x: 1.36, y: 2.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -38819,7 +38828,7 @@ MonoBehaviour:
     type: 3}
   firePoint: {fileID: 0}
   speed: 10
-  maxDistance: 3
+  maxDistance: 4
   damage: 15
   knockback: 2
   cooldown: 0.6
@@ -39157,7 +39166,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeUI
   notEnoughStones: {fileID: 11400000, guid: 331cfefa5f0edea46882cbc39d3163a0, type: 2}
-  upgrading: {fileID: 11400000, guid: 66599b969b0a83d4396c0d41555d5714, type: 2}
   upgradeSuccessful: {fileID: 11400000, guid: 19a19a9882d86f94aa8e7211e77364a4, type: 2}
   towerMaxLevel: {fileID: 11400000, guid: e37221b2c58f41745849609c864b3eb7, type: 2}
   messageDuration: 2

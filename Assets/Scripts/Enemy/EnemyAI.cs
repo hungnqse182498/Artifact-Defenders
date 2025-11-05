@@ -34,7 +34,7 @@ public class EnemyAI : MonoBehaviour
     bool attacking;
     public int CurrentHealth => currentHealth;
     public int MaxHealth => maxHealth;
-    public GameObject UpgradeItem;
+    public GameObject[] UpgradeItems;
     // mục tiêu
     Artifact artifact;
     BushFruits target;
@@ -255,19 +255,22 @@ public class EnemyAI : MonoBehaviour
         if (eh != null) eh.current = 0;
 
         yield return new WaitForSeconds(1.0f);
-        
-        if (UpgradeItem != null)
+
+        if (UpgradeItems != null && UpgradeItems.Length > 0)
         {
             Vector3 spawnPos = transform.position + Vector3.up * 0.3f;
-            GameObject item = Instantiate(UpgradeItem, spawnPos, Quaternion.identity);
+            int rand = Random.Range(0, UpgradeItems.Length); // chọn ngẫu nhiên 1 loại đá
+            GameObject item = Instantiate(UpgradeItems[rand], spawnPos, Quaternion.identity);
 
             Rigidbody2D rb = item.GetComponent<Rigidbody2D>();
             if (rb != null)
             {
-                // Văng nhẹ ra một hướng ngẫu nhiên
-                rb.AddForce(new Vector2(Random.Range(-1f, 1f), 1f) * 2f, ForceMode2D.Impulse);
+                // Văng nhẹ ra hướng ngẫu nhiên
+                Vector2 dir = Random.insideUnitCircle.normalized;
+                rb.AddForce(dir * 2f, ForceMode2D.Impulse);
             }
         }
+
         Destroy(gameObject);
     }
 }

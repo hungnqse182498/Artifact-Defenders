@@ -2,14 +2,17 @@
 
 public class UpgradeItem : MonoBehaviour
 {
-    public float pickupRadius = 2f;     // khoảng cách bắt đầu hút
-    public float moveSpeed = 5f;        // tốc độ hút item về player
-    private Transform player;           // lưu vị trí player
-    private bool isBeingPulled = false; // trạng thái đang bị hút
+    public enum StoneType { Tower, Attack }
+    public StoneType stoneType; // loại đá này là gì
+    public float pickupRadius = 2f;
+    public float moveSpeed = 5f;
+    private Transform player;
+    private bool isBeingPulled = false;
+    [SerializeField] private float attackIncrease = 2f;  // mức tăng damage khi nhặt đá Attack
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        player = GameObject.FindGameObjectWithTag("Player")?.transform;
     }
 
     void Update()
@@ -17,14 +20,9 @@ public class UpgradeItem : MonoBehaviour
         if (player == null) return;
 
         float distance = Vector2.Distance(transform.position, player.position);
-
-        // Nếu player lại gần trong bán kính
         if (distance < pickupRadius)
-        {
             isBeingPulled = true;
-        }
 
-        // Khi đang bị hút thì bay dần về phía player
         if (isBeingPulled)
         {
             transform.position = Vector2.MoveTowards(
@@ -34,16 +32,29 @@ public class UpgradeItem : MonoBehaviour
             );
         }
     }
+
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (!other.CompareTag("Player")) return;
+
+        switch (stoneType)
         {
-            PlayerUpgradeInventory inv = other.GetComponent<PlayerUpgradeInventory>();
-            if (inv != null)
-            {
-                inv.AddStone(1);
-                Destroy(gameObject); // nhặt xong biến mất
-            }
+            case StoneType.Tower:
+                PlayerUpgradeInventory inv = other.GetComponent<PlayerUpgradeInventory>();
+                if (inv != null)
+                    inv.AddStone(1); // cộng đá trụ
+                break;
+
+            case StoneType.Attack:
+                PlayerSlash slash = other.GetComponentInChildren<PlayerSlash>();
+                if (slash != null)
+                {
+                    slash.damage += 2; // mỗi viên +2 damage
+                    Debug.Log($"+2 Damage! New Damage: {slash.damage}");
+                }
+                break;
         }
+
+        Destroy(gameObject); // nhặt xong biến mất
     }
 }

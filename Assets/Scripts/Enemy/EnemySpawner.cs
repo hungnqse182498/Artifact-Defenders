@@ -12,6 +12,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] Transform wolfEaterPrefab;
     [SerializeField] Transform enemy00Prefab;
     [SerializeField] Transform enemy01Prefab;
+    [SerializeField] Transform BossPrefab;
 
     [SerializeField] Transform[] spawnPoints;
 
@@ -35,7 +36,7 @@ public class EnemySpawner : MonoBehaviour
         hardEnemies = new Transform[] { wolfEaterPrefab, enemy00Prefab };
 
         // Nhóm Thường: wolfPrefab và enemy01Prefab
-        commonEnemies = new Transform[] { wolfPrefab, enemy01Prefab };
+        commonEnemies = new Transform[] { wolfPrefab, enemy01Prefab, BossPrefab };
 
         currentSpawnTime = spawnTime;
         timer = Time.time;
