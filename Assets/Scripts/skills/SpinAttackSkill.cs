@@ -14,6 +14,9 @@ public class SpinAttackSkill : MonoBehaviour
     [Min(0.05f)] public float duration = 0.45f;
     [Min(0f)] public float cooldown = 0.8f;
 
+    [Header("Mana Cost")]                 //Mana
+    public int manaCost = 25;
+
     [Header("Targets")]
     public LayerMask enemyMask;                // để 0 sẽ tự lấy “Enemy”
     public Transform weaponPivot;              // optional: xoay vũ khí
@@ -30,6 +33,8 @@ public class SpinAttackSkill : MonoBehaviour
     float lastUse = -999f;
     bool running;
     readonly Dictionary<Transform, float> lastHit = new();
+
+    PlayerMana playerMana;
 
     int fIdx;
     float fTimer;
@@ -51,12 +56,20 @@ public class SpinAttackSkill : MonoBehaviour
 
         // bắt thử component điều khiển sprite cũ (đúng tên thì càng tốt)
         otherSpriteAnimator = GetComponent("PlayerSpriteAnim");
+
+        playerMana = GetComponent<PlayerMana>();
     }
 
     public void TryUse()
     {
         if (running) return;
         if (Time.time < lastUse + cooldown) return;
+
+        if (playerMana == null)
+        {
+            return;
+        }
+        if (!playerMana.TryUseMana(manaCost)) return;
 
         lastUse = Time.time;
         fIdx = 0;

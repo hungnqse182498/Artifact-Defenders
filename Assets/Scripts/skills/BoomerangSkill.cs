@@ -12,7 +12,11 @@ public class BoomerangSkill : MonoBehaviour
     public LayerMask enemyMask;      // nếu = 0 mình sẽ set "Enemy"
     public bool aimAtMouse = true;
 
+    [Header("Mana Cost")] // Mana
+    public int manaCost = 15;
+
     float lastUse = -999f;
+    PlayerMana playerMana;
 
     void Awake()
     {
@@ -22,11 +26,19 @@ public class BoomerangSkill : MonoBehaviour
             int enemyLayer = LayerMask.NameToLayer("Enemy");
             if (enemyLayer >= 0) enemyMask = 1 << enemyLayer;
         }
+        playerMana = GetComponent<PlayerMana>();
     }
 
     public void TryUse()
     {
         if (Time.time < lastUse + cooldown) return;
+
+        if (playerMana == null)
+        {
+            return;
+        }
+        if (!playerMana.TryUseMana(manaCost)) return;
+
         lastUse = Time.time;
 
         if (projectilePrefab == null)

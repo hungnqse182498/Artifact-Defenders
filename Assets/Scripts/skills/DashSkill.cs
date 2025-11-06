@@ -12,10 +12,15 @@ public class DashSkill : MonoBehaviour
     public bool grantIFrame = true;
     public string invincibleLayer = "PlayerIFrame";
 
+    [Header("Mana Cost")] //     Mana
+    public int manaCost = 10;
+
     Rigidbody2D rb;
     MonoBehaviour move; // PlayerMovement hoặc script di chuyển khác
     float lastUse = -999f;
     bool dashing;
+
+    PlayerMana playerMana;
 
     void Awake()
     {
@@ -25,12 +30,21 @@ public class DashSkill : MonoBehaviour
         // nếu có script tên PlayerMovement thì dùng đúng nó
         var pm = GetComponent("PlayerMovement") as MonoBehaviour;
         if (pm != null) move = pm;
+
+        playerMana = GetComponent<PlayerMana>();
     }
 
     public void TryUse()
     {
         if (dashing) return;
         if (Time.time < lastUse + cooldown) return;
+
+        if (playerMana == null)
+        {
+            return;
+        }
+        if (!playerMana.TryUseMana(manaCost)) return;
+
         StartCoroutine(DashRoutine());
     }
 
