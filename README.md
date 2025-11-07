@@ -1,21 +1,27 @@
-# Artifact Defenders
+# Artifact
 
-A fast-paced 2D action game focused on **combat skills** and **artifact protection**!  
-Fight waves of enemies, upgrade your abilities, and keep the artifact alive at all costs! ⚔️✨
+Simple 2D game focused in resource and time management!
 
-Developed using **Unity**.
+Originally made in **72 hours** for both **Ludum Dare 46** and **Torneo GJA Round 1**  
+Theme: **“Keep It Alive”**
 
-| ✨ Features | 🎮 Play (Upcoming) | 📸 Screenshots |
-|------------|------------------|----------------|
+| [:sparkles: Features](#code-and-features) | [:video_game: Play!](#play) | [:camera: Screenshots](#screenshots) |
+|------------------------------------------|----------------------------|-------------------------------------|
 
-![Banner](https://raw.githubusercontent.com/hungnqse182498/Artifact-Defenders/main/Images/banner.png)
+<img src="https://svartskogen.com/images/artifact2x1.png" />
 
-## Code & Features
+## Code and Features
 
-- Built with **Unity (Version TBD — your current one)**
-- Player abilities including **Dash**, **Spin Attack**, and **Slash Combo**
-- Working **Enemy AI, Hit Detection, Health & Damage system**
-- ScriptableObject-based parameters for easy balancing
-- Simple UI with skill buttons + cooldown visuals
-- Designed for **PC (Keyboard)** and later **Mobile support**
+- The game is currently built in **Unity 2019.4.9f1**
+- All the code is documented with `<summary>` tags so you can quickly understand the purpose of each component.
 
+<img src="http://media.svartskogen.com/artifact/documentation.png" />
+
+- Features a **ScriptableObject-based** simple localization system
+
+<img src="http://media.svartskogen.com/artifact/scriptableObjects.png" />
+
+- Clone the repo straight away and check the game in Unity yourself:
+
+```bash
+git clone https://github.com/Svartskogen/Artifact.git
