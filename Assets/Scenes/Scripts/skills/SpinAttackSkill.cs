@@ -109,7 +109,18 @@ public class SpinAttackSkill : MonoBehaviour
             {
                 nextTick += step;
 
-                int n = Physics2D.OverlapCircleNonAlloc(transform.position, radius, hitsBuf, enemyMask);
+                ContactFilter2D filter = new ContactFilter2D();
+                filter.useLayerMask = true;
+                filter.layerMask = enemyMask;
+                filter.useTriggers = true;
+
+                int n = Physics2D.OverlapCircle(
+                    transform.position,
+                    radius,
+                    filter,
+                    hitsBuf
+                );
+
                 for (int i = 0; i < n; i++)
                 {
                     var col = hitsBuf[i];

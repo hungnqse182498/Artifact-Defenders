@@ -31,7 +31,7 @@ public class EnemyAI : MonoBehaviour
     float attackTimer;
     float eatTimer;
     bool killingBush;
-    bool attacking;
+    [SerializeField] private bool attacking;
     public int CurrentHealth => currentHealth;
     public int MaxHealth => maxHealth;
     public GameObject UpgradeItem;
