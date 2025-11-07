@@ -13,21 +13,38 @@ public class DashSkill : MonoBehaviour
     public string invincibleLayer = "PlayerIFrame";
 
     Rigidbody2D rb;
-    MonoBehaviour move; // PlayerMovement hoặc script di chuyển khác
+    MonoBehaviour move;
     float lastUse = -999f;
     bool dashing;
+
+    // ✅ Hướng nhận từ UI (Joystick hoặc Button)
+    Vector2 uiDir = Vector2.zero;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        // tìm component di chuyển để tắt trong lúc dash
-        move = GetComponent<MonoBehaviour>(); // placeholder nếu bạn đổi tên
-        // nếu có script tên PlayerMovement thì dùng đúng nó
+        move = GetComponent<MonoBehaviour>();
+
         var pm = GetComponent("PlayerMovement") as MonoBehaviour;
         if (pm != null) move = pm;
     }
 
+    // ✅ PC dùng
     public void TryUse()
+    {
+        uiDir = Vector2.zero;
+        TryDash();
+    }
+
+    // ✅ Mobile dùng: truyền hướng từ UI (joystick/virtual dpad)
+    public void TryUse(Vector2 directionFromUI)
+    {
+        uiDir = directionFromUI.normalized;
+        TryDash();
+    }
+
+    // ✅ gom logic chung
+    void TryDash()
     {
         if (dashing) return;
         if (Time.time < lastUse + cooldown) return;
@@ -39,17 +56,16 @@ public class DashSkill : MonoBehaviour
         lastUse = Time.time;
         dashing = true;
 
-        // xác định hướng dash
         Vector2 dir = GetDashDir();
-        if (dir.sqrMagnitude < 0.0001f) dir = Vector2.right;
+        if (dir.sqrMagnitude < 0.0001f)
+            dir = Vector2.right;
 
         int originalLayer = gameObject.layer;
 
-        if (move != null) move.enabled = false;            // khóa script di chuyển
+        if (move != null) move.enabled = false;
         if (grantIFrame) gameObject.layer = LayerMask.NameToLayer(invincibleLayer);
 
         float t = 0f;
-        // tắt drag để khỏi mất lực
         float origDrag = rb.linearDamping;
         rb.linearDamping = 0f;
 
@@ -60,7 +76,6 @@ public class DashSkill : MonoBehaviour
             yield return null;
         }
 
-        // reset
         rb.linearVelocity = Vector2.zero;
         rb.linearDamping = origDrag;
         if (grantIFrame) gameObject.layer = originalLayer;
@@ -70,20 +85,15 @@ public class DashSkill : MonoBehaviour
 
     Vector2 GetDashDir()
     {
-        // 1) ưu tiên vận tốc hiện tại
+        // ✅ Ưu tiên UI (mobile)
+        if (uiDir != Vector2.zero)
+            return uiDir;
+
+        // ✅ nếu đang di chuyển → dash theo velocity
         if (rb != null && rb.linearVelocity.sqrMagnitude > 0.01f)
             return rb.linearVelocity.normalized;
 
-        // 2) nếu đứng yên: dash theo hướng chuột
-        var cam = Camera.main;
-        if (cam != null)
-        {
-            Vector3 mouse = cam.ScreenToWorldPoint(Input.mousePosition);
-            mouse.z = 0f;
-            return ((Vector2)(mouse - transform.position)).normalized;
-        }
-
-        // 3) cuối cùng: hướng phải
-        return Vector2.right;
+        // ✅ đứng yên → dash theo player facing direction
+        return transform.right;
     }
 }

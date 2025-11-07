@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class SkillManager : MonoBehaviour
 {
@@ -9,7 +9,12 @@ public class SkillManager : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.LeftShift)) dash?.TryUse();
-        if (Input.GetKeyDown(KeyCode.Q))         spin?.TryUse();
-        if (Input.GetKeyDown(KeyCode.E))         boomerang?.TryUse();
+        if (Input.GetKeyDown(KeyCode.Q)) spin?.TryUse();
+        if (Input.GetKeyDown(KeyCode.E)) boomerang?.TryUse();
     }
+
+    // 3 hàm này để UI Button gọi
+    public void UseDash() => dash?.TryUse();
+    public void UseSpin() => spin?.TryUse();
+    public void UseBoomerang() => boomerang?.TryUse();
 }
