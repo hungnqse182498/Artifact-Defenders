@@ -5,9 +5,9 @@ Theme: "**Keep It Alive**" 🕹️
 
 ---
 
-![Repo Size](https://img.shields.io/badge/Repo%20Size-15MB-gradient(blue,cyan)?style=for-the-badge&labelColor=purple)
-![Stars](https://img.shields.io/badge/Stars-120-gradient(pink,orange)?style=for-the-badge&labelColor=darkblue)
-![License](https://img.shields.io/badge/License-MIT-gradient(yellow,red)?style=for-the-badge&labelColor=black)
+![Repo Size](https://img.shields.io/badge/Repo%20Size-52MB-6f42c1?style=for-the-badge&labelColor=4b0082)
+![Stars](https://img.shields.io/badge/Stars-120-20c997?style=for-the-badge&labelColor=03544e)
+![License](https://img.shields.io/badge/License-TEAM_11-f2d600?style=for-the-badge&labelColor-8b8000)
 
 ---
 
@@ -15,7 +15,7 @@ Theme: "**Keep It Alive**" 🕹️
 
 | 📝 Overview | ✨ Features | ⚙️ Installation | 🎮 Play | 📸 Screenshots |
 |:-----------:|:-----------:|:---------------:|:-------:|:---------------:|
-| [Go to Overview](#overview) | [Go to Features](#features) | [Go to Installation](#installation) | [Go to Play](#play) | [Go to Screenshots](#screenshots) |
+| [Go to Overview](#overview) | [Go to Features](#features) | [Go to Installation](#installation) | [Go to Screenshots](#screenshots) |
 
 ---
 
