@@ -15,34 +15,35 @@ Theme: "**Keep It Alive**" 🕹️
 - [Overview](#overview)
 - [Features](#features)
 - [Installation](#installation)
-- [How to Play](#how-to-play)
+- [Build for Android](#build-for-android)
 - [Screenshots](#screenshots)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
-
 ---
 
 ## Overview
 
 Artifact is a lightweight 2D game where **every decision counts**.  
 Manage resources, keep your environment alive, and survive as long as possible.  
-Designed for **WebGL** at **960x600**, but fully compatible with Desktop and adjustable resolutions.
+Designed for **Android APK builds**, recommended resolution **1920x1080** for full-screen devices, but fully compatible with other resolutions.
 
 ---
 
 ## Features
 
 - **Scriptable Object-Based Architecture:** Simplifies data management and game logic.  
-  <img src="src/images/scriptableObjects.png" alt="Scriptable Objects Example"/>
-- **Localization Support:** Easily extendable with Scriptable Objects.  
-  <img src="src/images/documentation.png" alt="Localization Documentation"/>
-- **Fully Documented Code:** Every component comes with `<summary>` tags for clarity.  
-- **Cross-Platform Ready:** WebGL, Windows, MacOS, adjustable screen resolutions.  
-- **Quick Start:** Clone, open in Unity, and play immediately.
+  <img src="src/images/scriptableObjects.png" alt="Scriptable Objects Example" width="500"/>
+- **Localization Support:** Easily extendable using Scriptable Objects.  
+  <img src="src/images/documentation.png" alt="Localization Documentation" width="500"/>
+- **Fully Documented Code:** All scripts use `<summary>` tags for easy understanding.  
+- **Cross-Platform Ready:** Designed for Android, easily ported to Desktop if needed.  
+- **Quick Start:** Clone, open in Unity, and build APK immediately.
 
 ---
+## Screenshots
 
+<img src="src/images/screen1.png" alt="Gameplay Screenshot 1" width="600"/>
+<img src="src/images/screen2.png" alt="Gameplay Screenshot 2" width="600"/>
+
+---
 ## Installation
 
 1. **Clone the repository**
