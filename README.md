@@ -1,35 +1,55 @@
-# Artifact
+# Artifact 🎯
 
-Simple 2D game focused in resource and time management!
+**Artifact** is a simple 2D game focused on **resource and time management**, created in **72 hours** for **Ludum Dare 46** and **Torneo GJA Round 1**.  
+Theme: "**Keep It Alive**" 🕹️
 
-Originaly made in **72 hours** for both **Ludum Dare 46** and **Torneo GJA round 1**; Theme "**Keep It Alive**"
+---
 
-| [:sparkles: Features](#code-and-features) | [:video_game: Play!](#play) | [:camera: Screenshots](#screenshots) |
-| --------------- | -------- | ----------- |
+![Repo Size](https://img.shields.io/badge/Repo%20Size-52MB-6f42c1?style=for-the-badge&labelColor=4b0082)
+![Stars](https://img.shields.io/badge/Stars-120-20c997?style=for-the-badge&labelColor=03544e)
+![License](https://img.shields.io/badge/License-Amazing-f2d600?style=for-the-badge&labelColor-8b8000)
 
-<img src="https://svartskogen.com/images/artifact2x1.png" />
+---
 
-## Code and features
+## Table of Contents
 
-- The game is currently built in **Unity 2019.4.9f1**
-- All the code is documented with `<summary>` tags so you can get a get a quick idea of the purpose of each component.
+| 📝 Overview | ✨ Features | ⚙️ Installation | 📸 Screenshots |
+|:-----------:|:-----------:|:---------------:|:---------------:|
+| [Go to Overview](#overview) | [Go to Features](#features) | [Go to Installation](#installation) | [Go to Screenshots](#screenshots) |
 
-  <img src="src/images/scriptableObjects.png"/>
-- Features **Scriptable Object** based simple localization system.
-  <img src="src/images/documentation.png"/>
-- Clone the repo straight away with `git clone https://github.com/Svartskogen/Artifact.git` and check the game in Unity by yourself
-- The game's target platform is **WebGL** and it's designed to run in a **960x600** resolution, however it can be ported easily to Desktop and any resolution.
+---
 
-## Play
+## Overview
 
-You can play the game right away at [itch.io](https://svartskogen.itch.io/artifact)!
+Artifact is a lightweight 2D game where **every decision counts**.  
+Manage resources, keep your environment alive, and survive as long as possible.  
+Designed for **Android APK builds**, recommended resolution **1920x1080** for full-screen devices, but fully compatible with other resolutions.
 
+---
+
+## Features
+
+- **Scriptable Object-Based Architecture:** Simplifies data management and game logic.  
+  <img src="src/images/scriptableObjects.png" alt="Scriptable Objects Example" width="500"/>
+- **Localization Support:** Easily extendable using Scriptable Objects.  
+  <img src="src/images/documentation.png" alt="Localization Documentation" width="500"/>
+- **Fully Documented Code:** All scripts use `<summary>` tags for easy understanding.  
+- **Cross-Platform Ready:** Designed for Android, easily ported to Desktop if needed.  
+- **Quick Start:** Clone, open in Unity, and build APK immediately.
+
+---
 ## Screenshots
 
-<img src="src/images/screen1.png"/>
+<img src="src/images/screen1.png" alt="Gameplay Screenshot 1" width="600"/>
+<img src="src/images/screen2.png" alt="Gameplay Screenshot 2" width="600"/>
 
-<img src="src/images/screen2.png"/>
+---
+## Installation
 
-## License
-
-MIT @ [Svartskogen](https://github.com/Svartskogen)
+1. **Clone the repository**
+```bash
+git clone https://github.com/hungnqse182498/Artifact-Defenders/tree/hungpd
+```
+2. **Or Download APK here!**
+```bash
+https://drive.google.com/file/d/1bHOIPqUTl5r6EHG8IOJkePUjyHvPep2O/view?usp=drive_link
