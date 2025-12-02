@@ -5,9 +5,9 @@ Theme: "**Keep It Alive**" 🕹️
 
 ---
 
-![GitHub repo size](https://img.shields.io/github/repo-size/hungnqse182498/Artifact-Defenders?style=flat-square) 
-![GitHub stars](https://img.shields.io/github/stars/hungnqse182498/Artifact-Defenders?style=flat-square)
-![MIT License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
+![Repo Size](https://img.shields.io/github/repo-size/hungnqse182498/Artifact-Defenders?style=for-the-badge&logo=github&color=blueviolet)
+![Stars](https://img.shields.io/github/stars/hungnqse182498/Artifact-Defenders?style=for-the-badge&logo=starship&color=yellowgreen)
+![License](https://img.shields.io/badge/License-MIT-pink?style=for-the-badge&logo=opensourceinitiative)
 
 ---
 
@@ -15,7 +15,6 @@ Theme: "**Keep It Alive**" 🕹️
 - [Overview](#overview)
 - [Features](#features)
 - [Installation](#installation)
-- [Build for Android](#build-for-android)
 - [Screenshots](#screenshots)
 ---
 
