@@ -14,7 +14,7 @@ Theme: "**Keep It Alive**" 🕹️
 ## Table of Contents
 
 | 📝 Overview | ✨ Features | ⚙️ Installation | 📸 Screenshots |
-|:-----------:|:-----------:|:---------------:|:-------:|:---------------:|
+|:-----------:|:-----------:|:---------------:|:---------------:|
 | [Go to Overview](#overview) | [Go to Features](#features) | [Go to Installation](#installation) | [Go to Screenshots](#screenshots) |
 
 ---
