@@ -7,7 +7,7 @@ Theme: "**Keep It Alive**" 🕹️
 
 ![Repo Size](https://img.shields.io/badge/Repo%20Size-52MB-6f42c1?style=for-the-badge&labelColor=4b0082)
 ![Stars](https://img.shields.io/badge/Stars-120-20c997?style=for-the-badge&labelColor=03544e)
-![License](https://img.shields.io/badge/License-TEAM_11-f2d600?style=for-the-badge&labelColor-8b8000)
+![License](https://img.shields.io/badge/License-Amazing-f2d600?style=for-the-badge&labelColor-8b8000)
 
 ---
 
@@ -44,8 +44,10 @@ Designed for **Android APK builds**, recommended resolution **1920x1080** for fu
 <img src="src/images/screen2.png" alt="Gameplay Screenshot 2" width="600"/>
 
 ---
-## Installation
+## Installation OR Download APK here
 
 1. **Clone the repository**
 ```bash
 git clone https://github.com/hungnqse182498/Artifact-Defenders/tree/hungpd
+
+https://drive.google.com/file/d/1bHOIPqUTl5r6EHG8IOJkePUjyHvPep2O/view?usp=drive_link
