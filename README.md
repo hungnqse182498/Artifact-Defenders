@@ -5,9 +5,9 @@ Theme: "**Keep It Alive**" 🕹️
 
 ---
 
-![Repo Size](https://img.shields.io/badge/Repo%20Size-📦-brightgreen?style=for-the-badge&logo=github&logoColor=white&labelColor=purple)
-![Stars](https://img.shields.io/badge/Stars-⭐-orange?style=for-the-badge&logo=starship&logoColor=white&labelColor=darkblue)
-![License](https://img.shields.io/badge/License-MIT-magenta?style=for-the-badge&logo=opensourceinitiative&logoColor=white&labelColor=black)
+![Repo Size](https://img.shields.io/badge/Repo%20Size-📦-gradient(blue,cyan)?style=for-the-badge&logo=github&logoColor=white)
+![Stars](https://img.shields.io/badge/Stars-⭐-gradient(pink,orange)?style=for-the-badge&logo=starship&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-gradient(yellow,red)?style=for-the-badge&logo=opensourceinitiative&logoColor=black)
 
 ---
 
