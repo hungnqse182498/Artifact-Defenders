@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caa06c6371307e847aca1c15b64861d5, type: 3}
+  m_Name: item
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizableString
+  english: 'ARTIFACT UPGRADE STONE: when killing monsters will drop, accumulate enough
+    can be used to upgrade Artifact, increase health and defense power'
+  vietnamese: "\u0110\xC1 N\xC2NG C\u1EA4P C\u1ED4 V\u1EACT: khi ti\xEAu di\u1EC7t
+    qu\xE1i v\u1EADt s\u1EBD r\u01A1i ra, t\xEDch l\u0169y \u0111\u1EE7 c\xF3 th\u1EC3
+    d\xF9ng \u0111\u1EC3 n\xE2ng c\u1EA5p C\u1ED5 V\u1EADt, t\u0103ng m\xE1u v\xE0
+    s\u1EE9c m\u1EA1nh ph\xF2ng th\u1EE7 "

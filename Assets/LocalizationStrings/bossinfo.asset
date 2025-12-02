@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caa06c6371307e847aca1c15b64861d5, type: 3}
+  m_Name: bossinfo
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizableString
+  english: Deals massive damage and directly attacks Artifacts, knows how to use
+    skills, and is stronger than normal monsters
+  vietnamese: "G\xE2y s\xE1t th\u01B0\u01A1ng l\u1EDBn v\xE0 tr\u1EF1c ti\u1EBFp
+    t\u1EA5n c\xF4ng C\u1ED5 v\u1EADt, bi\u1EBFt s\u1EED d\u1EE5ng k\u0129 n\u0103ng
+    v\xE0 kh\u1ECFe h\u01A1n qu\xE1i v\u1EADt th\u01B0\u1EDDng "

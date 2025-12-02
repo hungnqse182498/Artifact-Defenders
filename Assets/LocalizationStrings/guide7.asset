@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caa06c6371307e847aca1c15b64861d5, type: 3}
+  m_Name: guide7
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizableString
+  english: Win when time reaches 0 and the Artifact has health. Lose when the Artifact's
+    health drops to 0
+  vietnamese: "Th\u1EAFng khi th\u1EDDi gian v\u1EC1 0 v\xE0 C\u1ED5 V\u1EADt c\xF2n
+    m\xE1u. Thua khi m\xE1u C\u1ED5 V\u1EADt gi\u1EA3m v\u1EC1 0"

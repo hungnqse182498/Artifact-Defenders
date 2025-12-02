@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caa06c6371307e847aca1c15b64861d5, type: 3}
+  m_Name: item 1
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizableString
+  english: 'ATTACK UPGRADE STONE: will drop when killing monsters, pick it up to
+    increase attack'
+  vietnamese: "\u0110\xC1 N\xC2NG C\u1EA4P T\u1EA4N C\xD4NG: khi ti\xEAu di\u1EC7t
+    qu\xE1i v\u1EADt s\u1EBD r\u01A1i ra, nh\u1EB7t \u0111\u1EC3 t\u0103ng t\u1EA5n
+    c\xF4ng "

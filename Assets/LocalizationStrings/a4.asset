@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caa06c6371307e847aca1c15b64861d5, type: 3}
+  m_Name: a4
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizableString
+  english: 'Level 1: Hp: 200
+
+    Level 2 (3 Stone): Hp: 350
+
+    Level 3 (5 Stone):
+    Hp: 500 - Dame: 25'
+  vietnamese: "C\u1EA5p 1: M\xE1u: 200\nC\u1EA5p 2 (3 \u0110\xE1): M\xE1u: 350\nC\u1EA5p
+    3 (5 \u0110\xE1): M\xE1u: 500 - S\xE1t th\u01B0\u01A1ng: 25"

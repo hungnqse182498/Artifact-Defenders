@@ -430,7 +430,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b3659ecdc4dc57468eae50858a5a6d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amountPerType: 0a000000070000000c000000
+  amountPerType: 320000001400000064000000
   respawnTime:
   - 80
   - 50

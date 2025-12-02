@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caa06c6371307e847aca1c15b64861d5, type: 3}
+  m_Name: guide4
+  m_EditorClassIdentifier: Assembly-CSharp::LocalizableString
+  english: The Artifact will continuously lose health, you need to pick up Fruits
+    and then get close to heal the Artifact, so be careful to kill the monsters near
+    the Bushes
+  vietnamese: "C\u1ED5 v\u1EADt s\u1EBD li\xEAn t\u1EE5c m\u1EA5t m\xE1u, b\u1EA1n
+    c\u1EA7n ph\u1EA3i nh\u1EB7t Tr\xE1i c\xE2y r\u1ED3i l\u1EA1i g\u1EA7n \u0111\u1EC3
+    h\u1ED3i m\xE1u cho C\u1ED5 v\u1EADt,  v\xEC v\u1EADy h\xE3y \u0111\u1EC3 \xFD
+    ti\xEAu di\u1EC7t nh\u1EEFng con qu\xE1i \u1EDF g\u1EA7n B\u1EE5i c\xE2y"
