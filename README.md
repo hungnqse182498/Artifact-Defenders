@@ -44,11 +44,12 @@ Designed for **Android APK builds**, recommended resolution **1920x1080** for fu
 <img src="src/images/screen2.png" alt="Gameplay Screenshot 2" width="600"/>
 
 ---
-## Installation OR Download APK here
+## Installation
 
 1. **Clone the repository**
 ```bash
 git clone https://github.com/hungnqse182498/Artifact-Defenders/tree/hungpd
 ```
+Or Download APK here!
 ```bash
 https://drive.google.com/file/d/1bHOIPqUTl5r6EHG8IOJkePUjyHvPep2O/view?usp=drive_link
