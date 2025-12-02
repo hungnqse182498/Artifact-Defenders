@@ -5,17 +5,18 @@ Theme: "**Keep It Alive**" 🕹️
 
 ---
 
-![Repo Size](https://img.shields.io/github/repo-size/hungnqse182498/Artifact-Defenders?style=for-the-badge&logo=github&color=blueviolet)
-![Stars](https://img.shields.io/github/stars/hungnqse182498/Artifact-Defenders?style=for-the-badge&logo=starship&color=yellowgreen)
-![License](https://img.shields.io/badge/License-MIT-pink?style=for-the-badge&logo=opensourceinitiative)
+![Repo Size](https://img.shields.io/github/repo-size/hungnqse182498/Artifact-Defenders?style=for-the-badge&logo=github&logoColor=white&color=blueviolet&labelColor=black)
+![Stars](https://img.shields.io/github/stars/hungnqse182498/Artifact-Defenders?style=for-the-badge&logo=starship&logoColor=white&color=ff69b4&labelColor=8a2be2)
+![License](https://img.shields.io/badge/License-MIT-white?style=for-the-badge&logo=opensourceinitiative&logoColor=black&color=00ffff&labelColor=ff1493)
 
 ---
 
 ## Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Installation](#installation)
-- [Screenshots](#screenshots)
+
+| 📝 Overview | ✨ Features | ⚙️ Installation | 🎮 Play | 📸 Screenshots |
+|:-----------:|:-----------:|:---------------:|:-------:|:---------------:|
+| [Go to Overview](#overview) | [Go to Features](#features) | [Go to Installation](#installation) | [Go to Play](#play) | [Go to Screenshots](#screenshots) |
+
 ---
 
 ## Overview
