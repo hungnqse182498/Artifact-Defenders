@@ -1,34 +1,50 @@
-# Artifact
+# Artifact 🎯
 
-Simple 2D game focused in resource and time management!
+**Artifact** is a simple 2D game focused on **resource and time management**, created in **72 hours** for **Ludum Dare 46** and **Torneo GJA Round 1**.  
+Theme: "**Keep It Alive**" 🕹️
 
-Originaly made in **72 hours** for both **Ludum Dare 46** and **Torneo GJA round 1**; Theme "**Keep It Alive**"
+---
 
-| [:sparkles: Features](#code-and-features) | [:video_game: Play!](#play) | [:camera: Screenshots](#screenshots) |
-| --------------- | -------- | ----------- |
+![GitHub repo size](https://img.shields.io/github/repo-size/hungnqse182498/Artifact-Defenders?style=flat-square) 
+![GitHub stars](https://img.shields.io/github/stars/hungnqse182498/Artifact-Defenders?style=flat-square)
+![MIT License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
 
+---
 
-## Code and features
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Installation](#installation)
+- [How to Play](#how-to-play)
+- [Screenshots](#screenshots)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
-- The game is currently built in **Unity 6.2 (6000.2.7f2)**
-- All the code is documented with `<summary>` tags so you can get a get a quick idea of the purpose of each component.
+---
 
-  <img src="src/images/scriptableObjects.png"/>
-- Features **Scriptable Object** based simple localization system.
-  <img src="src/images/documentation.png"/>
-- Clone the repo straight away with `git clone https://github.com/hungnqse182498/Artifact-Defenders/tree/hungpd` and check the game in Unity by yourself
-- The game's target platform is **WebGL** and it's designed to run in a **960x600** resolution, however it can be ported easily to Desktop and any resolution.
+## Overview
 
-## Play
+Artifact is a lightweight 2D game where **every decision counts**.  
+Manage resources, keep your environment alive, and survive as long as possible.  
+Designed for **WebGL** at **960x600**, but fully compatible with Desktop and adjustable resolutions.
 
-You can play the game right away at [itch.io](https://svartskogen.itch.io/artifact)!
+---
 
-## Screenshots
+## Features
 
-<img src="src/images/screen1.png"/>
+- **Scriptable Object-Based Architecture:** Simplifies data management and game logic.  
+  <img src="src/images/scriptableObjects.png" alt="Scriptable Objects Example"/>
+- **Localization Support:** Easily extendable with Scriptable Objects.  
+  <img src="src/images/documentation.png" alt="Localization Documentation"/>
+- **Fully Documented Code:** Every component comes with `<summary>` tags for clarity.  
+- **Cross-Platform Ready:** WebGL, Windows, MacOS, adjustable screen resolutions.  
+- **Quick Start:** Clone, open in Unity, and play immediately.
 
-<img src="src/images/screen2.png"/>
+---
 
-## License
+## Installation
 
-MIT @ [duckhynh](https://github.com/hungnqse182498/Artifact-Defenders.git)
+1. **Clone the repository**
+```bash
+git clone https://github.com/hungnqse182498/Artifact-Defenders/tree/hungpd
